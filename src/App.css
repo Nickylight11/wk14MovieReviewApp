@@ -1,3 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-size: contain;
+  background-position: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #61dafb;
+}
+
+.background-image {
+  opacity: 50%;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +48,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.h1 {
+  text-align: center;
 }
