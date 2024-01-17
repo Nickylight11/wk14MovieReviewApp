@@ -1,4 +1,4 @@
-// MovieList component
+// Movie list component where i was able to display each movie
 import React from "react";
 import Movie from "./Movie";
 

@@ -1,4 +1,5 @@
-// ReviewList.js
+// ReviewList component which helped display each of the text reviews
+
 import React from "react";
 import Review from "./Review";
 

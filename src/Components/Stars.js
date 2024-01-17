@@ -1,3 +1,5 @@
+// Stars component where the stars rating was designed to have a separate rating compared to the text review.
+
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";

@@ -1,4 +1,4 @@
-// Movie.js
+// Movie component where i was able to show the movie image, title and some styling. This also hosted review data
 import { useState } from "react";
 import Stars from "./Stars";
 import ReviewList from "./ReviewList";

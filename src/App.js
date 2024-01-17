@@ -2,6 +2,7 @@ import React from "react";
 import MovieList from "./Components/MovieList";
 import stylesheet from "./App.css";
 
+// Added my movie data
 const moviesData = [
   {
     id: 1,
