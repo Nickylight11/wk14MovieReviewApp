@@ -19,7 +19,7 @@ const moviesData = [
       "https://upload.wikimedia.org/wikipedia/en/d/d1/Five_hundred_days_of_summer.jpg",
     synopsis:
       "After being dumped by the girl he believes to be his soulmate, hopeless romantic Tom Hansen reflects on their relationship to try and figure out where things went wrong and how he can win her back.",
-    rating: "R",
+    rating: "PG-13",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const moviesData = [
     image: "https://upload.wikimedia.org/wikipedia/en/0/02/The_Proposal.jpg",
     synopsis:
       "A pushy boss forces her young assistant to marry her in order to keep her visa status in the U.S. and avoid deportation to Canada.",
-    rating: "R",
+    rating: "PG-13",
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const moviesData = [
       "https://upload.wikimedia.org/wikipedia/en/3/3b/My_Big_Fat_Greek_Wedding_movie_poster.jpg",
     synopsis:
       "A young Greek woman falls in love with a non-Greek and struggles to get her family to accept him while she comes to terms with her heritage and cultural identity.",
-    rating: "R",
+    rating: "PG",
   },
   {
     id: 5,

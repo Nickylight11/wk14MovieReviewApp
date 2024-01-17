@@ -1,10 +1,15 @@
 // Movie.js
-import React from "react";
+import { useState } from "react";
 import Stars from "./Stars";
 import ReviewList from "./ReviewList";
 import ReviewForm from "./ReviewForm";
 
 const Movie = ({ movie }) => {
+  const [reviews, setReviews] = useState([]);
+  function hostReviews(newReview) {
+    setReviews([reviews, newReview]);
+    console.log("hosting data to the reviews array");
+  }
   return (
     <div
       style={{
@@ -20,15 +25,15 @@ const Movie = ({ movie }) => {
         style={{ maxWidth: "100%", height: "auto" }}
       />
       <h2 style={{ margin: "10px 0" }}>{movie.title}</h2>
-      <p style={{ border: "5px solid #ccc", padding: "10px" }}>
+      <p style={{ border: "5px solid black", padding: "10px" }}>
         {movie.synopsis}
       </p>
-      <p style={{ border: "5px solid #ccc", padding: "10px" }}>
+      <p style={{ border: "5px solid black", padding: "10px" }}>
         {movie.rating}
       </p>
       <Stars />
-      <ReviewList />
-      <ReviewForm />
+      <ReviewList reviews={reviews} />
+      <ReviewForm movie={movie} hostReviews={hostReviews} />
     </div>
   );
 };
