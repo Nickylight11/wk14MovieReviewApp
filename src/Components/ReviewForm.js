@@ -12,7 +12,6 @@ const ReviewForm = ({ value, movie, hostReviews }) => {
       `review-textarea-${movie.id}`
     ).value;
     setReview(textAreaData);
-    hostReviews();
   };
 
   const onSubmit = async (event) => {
@@ -30,6 +29,7 @@ const ReviewForm = ({ value, movie, hostReviews }) => {
     // Reset the review text and submit status
     setReview("");
     setSubmitStatus("success");
+    hostReviews(review);
   };
 
   return (

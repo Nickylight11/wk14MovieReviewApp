@@ -1,12 +1,34 @@
-import React from "react";
-import Box from "@mui/material/Box"; // Import Box component from Material-UI
-import Rating from "@mui/material/Rating"; // Import Rating component from Material-UI
+import React, { useState } from "react";
+import Box from "@mui/material/Box";
+import Rating from "@mui/material/Rating";
 
 const Stars = () => {
-  // Your star rating logic goes here
+  const [rating, setRating] = useState(0);
+  const [reviewSubmitted, setReviewSubmitted] = useState(false);
+
+  const handleRatingChange = (event, newValue) => {
+    setRating(newValue);
+  };
+
+  const handleSubmitReview = () => {
+    setReviewSubmitted(true);
+  };
+
   return (
     <Box>
-      <Rating name="stars" />
+      {reviewSubmitted ? (
+        <p>Thank you for your review! Rated: {rating}</p>
+      ) : (
+        <div>
+          <Rating
+            name="stars"
+            value={rating}
+            onChange={handleRatingChange}
+            precision={0.5}
+          />
+          <button onClick={handleSubmitReview}>Submit Review</button>
+        </div>
+      )}
     </Box>
   );
 };
